@@ -1,0 +1,167 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #E7F1F9;
+}
+
+/* header */
+
+header{
+    margin: 40px 0 0 0;
+}
+header div{
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: #26344F;
+   
+}
+header div p{
+    font-size: 20px;
+   
+}
+.cal h1{
+    font-size: 26px;
+    font-weight: bold;
+}
+header div .cal {
+    position: relative;
+    width: fit-content;
+}
+header div .cal .line{
+    position: absolute;
+    left: 5px;
+    bottom: 0;
+    width: 68px;
+    height: 4px;
+    background-color: #FF805D;
+    animation-name: anime;
+    animation-duration: 500ms;
+}
+
+@keyframes anime {
+    0%{
+        width: 0px;
+    }
+    100%{
+        width: 68px;
+    }
+}
+/* Personal Loan */
+
+.personalLoan{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    margin: 45px 0 50px 0;
+}
+.personal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background-color: #FF805D;
+    color: #FFF;
+    width: 294px;
+    height: 50px;
+    border-radius: 10px;
+}
+
+
+.personalLoan .personal .txt{
+    font-size: 24px;
+    font-weight: 500;
+}
+.personalLoan .personal .img{
+    position: relative;
+    top: 4.8px;
+}
+
+/* main content */
+
+.loanInfo .loanHead{
+    font-size: 16px;
+    color: #26344F;
+}
+
+main{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* background-color: red; */
+}
+
+main .loanInfo .input{
+   margin: 0 0 20px 0;
+}
+
+main .loanInfo p{
+    margin: 0 0 3px 0;
+ }
+
+main .loanInfo .input input{
+    border: none;
+    height: 40px;
+    width: 294px;
+    border-radius: 6px;
+    font-size: 18px;
+    color: #26344F;
+    background: #f7be6f;
+    padding: 10px;
+    
+}
+
+main{
+    margin: 45px 0 0 0;
+}
+
+main button{
+    width: 100%;
+    height: 53px;
+    border: none;
+    border-radius: 6px;
+    color: #FFFFFF;
+    background-color: #26344F;
+    font-size: 19px;
+    font-weight: bold;
+    cursor: pointer;
+    margin: 20px 0 0 0;
+}
+
+.calculations{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    margin: 30px 0 20px 0;
+
+}
+.calculations .content{
+    width: 294px;
+}
+
+.calculations .content .heading{
+    font-size: 18px;
+    color: #26344F;
+}
+
+.calculations .content .amount{
+    font-size: 24px;
+    color: #FF805D;
+    font-weight: bold;
+}
+
+.content{
+    margin: 20px 0 0 0 ;
+}
+
+#chartContainer{
+    display: none;
+}

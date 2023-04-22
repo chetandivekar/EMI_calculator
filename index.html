@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+    <title>EMI Calculator</title>
+</head>
+
+<body>
+    <header>
+        <div>
+            <p>Loan EMI</p>
+            <div class="cal">
+                <h1>Calculator</h1>
+                <div class="line"></div>
+            </div>
+
+        </div>
+
+    </header>
+
+    <div class="personalLoan">
+        <div class="personal">
+            <div class="img">
+                <img src="./img/gg_profile.svg" alt="">
+            </div>
+            <div class="txt">
+                Personal Loan
+            </div>
+        </div>
+    </div>
+
+
+    <main>
+        <div class="loanInfo">
+            <div class="loanHead">
+                <p>Loan Amount</p>
+            </div>
+            <div class="input">
+                <input type="text" id="loanAmount">
+            </div>
+
+
+            <div class="loanHead">
+                <p>Years</p>
+            </div>
+            <div class="input">
+                <input type="text" id="year">
+            </div>
+
+
+
+            <div class="loanHead">
+                <p>Interst rate (%)</p>
+            </div>
+            <div class="input">
+                <input type="text" placeholder="%" id="rate">
+            </div>
+
+            <button id="btn">Calculate your EMI</button>
+        </div>
+    </main>
+   
+<div class="calculations">
+    <div class="content">
+        <div class="heading">Monthly EMI</div>
+        <div class="amount" id="month">₹ XXXXX</div>
+    </div>
+
+    <div class="content">
+        <div class="heading">Total amount to be Paid</div>
+        <div class="amount" id="amount">₹ XXXXX</div>
+    </div>
+
+    <div class="content">
+        <div class="heading">Extra Money (Interest)</div>
+        <div class="amount" id="interest">₹ XXXXX</div>
+    </div>
+    
+</div>
+
+<h2 style="text-align: center;color: #26344F; margin-bottom: 20px;">EMI Chart</h2>
+
+<div id="chartContainer" style="height: 300px; width: 100%;font-family: 'Poppins', sans-serif;"></div>
+
+<div class="footer" id="footer">
+    <p style="text-align: center;color: #26344F;">Created By Chetan</p>
+
+</div>
+
+<script src="https://canvasjs.com/assets/script/jquery-1.11.1.min.js"></script>
+<script src="https://canvasjs.com/assets/script/jquery.canvasjs.min.js"></script>
+
+
+
+</body>
+
+<script src="script.js"></script>
+
+
+</html>
